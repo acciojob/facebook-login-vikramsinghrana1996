@@ -1,8 +1,87 @@
 <html>
   <head>
     <title>Facebook Login</title>
+    <style>
+      body {
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        gap: 50px;
+      }
+      .left {
+        width: 450px;
+        margin-top: 70px;
+        display: inline-block;
+      }
+      .form {
+        display: flex;
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #ccc;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .left img {
+        width: 200px;
+      }
+      .left p {
+        font-size: 20px;
+        color: #333;
+      }
+      .login-btn {
+        background-color: #1877f2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+      }
+      .forgot-link {
+        text-decoration: none;
+        color: #1877f2;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .signup {
+        background-color: #42b72a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Write your code here -->
+    <div class="container">
+      <div class="left">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+          alt="Facebook logo"
+        />
+        <p>Facebook helps you connect and share with the people in your life.</p>
+      </div>
+      <div class="right">
+        <form class="form">
+          <input type="text" id="email" placeholder="Email address or phone number" />
+          <input type="password" id="password" placeholder="Password" />
+          <button type="submit" class="login-btn">Log in</button>
+          <a href="#" class="forgot-link">Forgotten account?</a>
+        </form>
+        <button class="signup">Create new account</button>
+      </div>
+    </div>
   </body>
 </html>
+
